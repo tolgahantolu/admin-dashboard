@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  background-color: #e0e0e0;
+  position: relative;
+  display: flex; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+.panel {
+  width: calc(100% - 300px); }
+  .panel__navigation {
+    padding: 15px 30px;
+    border-bottom: 3px solid #0f1522;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .panel__search {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .panel__search i {
+      margin-right: 14px; }
+    .panel__search input {
+      font-size: 14px;
+      outline: none;
+      border: none; }
+  .panel__profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .panel__profile i {
+      font-size: 18px;
+      margin-right: 20px; }
+    .panel__profile img {
+      background-color: darkred;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover; }
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #0f1522; }
+  .sidebar__logo {
+    color: #fff;
+    padding: 30px 0 0 30px;
+    display: flex;
+    align-items: center; }
+    .sidebar__logo img {
+      width: 40px;
+      margin-right: 10px; }
+  .sidebar__items {
+    margin-top: 40px; }
+    .sidebar__items li {
+      list-style: none;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .sidebar__items li:hover {
+        background-color: #192030; }
+      .sidebar__items li:nth-child(1) {
+        border-left: 3px solid #fff; }
+      .sidebar__items li i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 10px 0 25px;
+        color: #9e9e9e;
+        transition: all 0.3s ease; }
+      .sidebar__items li:hover i,
+      .sidebar__items li:hover a {
+        color: #ccc; }
+      .sidebar__items li a {
+        text-decoration: none;
+        font-weight: 300;
+        color: #9e9e9e;
+        transition: all 0.3s ease; }
