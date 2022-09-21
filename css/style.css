@@ -96,6 +96,55 @@ body {
       font-size: 15px;
       color: #343a42;
       opacity: 0.8; }
+  .panel__board {
+    width: 94.5%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: #fff; }
+    .panel__board img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px; }
+    .panel__board h5 {
+      font-size: 14px;
+      font-weight: 600; }
+    .panel__board p {
+      font-size: 12px;
+      padding-top: 5px;
+      color: #343a42;
+      opacity: 0.8; }
+    .panel__board table {
+      border-collapse: collapse; }
+    .panel__board tr {
+      border-bottom: 1px solid #ccc; }
+    .panel__board thead td {
+      font-size: 14px;
+      text-transform: uppercase;
+      background-color: #f6f6f6;
+      text-align: start;
+      padding: 15px; }
+    .panel__board tbody tr,
+    .panel__board tbody td {
+      padding: 10px 15px; }
+  .panel__people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start; }
+  .panel__status p {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 25px;
+    background-color: #5dff65;
+    color: #1c1d1c; }
+  .panel__edit a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4407d3; }
 
 .sidebar {
   width: 300px;

@@ -6,9 +6,7 @@
     border-bottom: 3px solid $bg-navy-primary;
     background-color: $color-white;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexElement(space-between, center);
   }
 
   &__search {
@@ -16,9 +14,7 @@
     border: 1px solid $color-gray-light;
     border-radius: 5px;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexElement(flex-start, center);
 
     i {
       margin-right: 14px;
@@ -32,9 +28,7 @@
   }
 
   &__profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexElement(flex-start, center);
 
     i {
       font-size: 18px;
@@ -60,9 +54,7 @@
   &__values {
     padding: 30px 30px 0 30px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexElement(space-between, center);
     flex-wrap: wrap;
   }
 
@@ -72,9 +64,7 @@
     border-radius: 5px;
     background-color: $color-white;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexElement(flex-start, center);
 
     i {
       font-size: 25px;
@@ -109,6 +99,83 @@
       font-size: 15px;
       color: $color-gray-dark;
       opacity: 0.8;
+    }
+  }
+
+  &__board {
+    width: 94.5%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: $color-white;
+
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 12px;
+      padding-top: 5px;
+      color: $color-gray-dark;
+      opacity: 0.8;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    tr {
+      border-bottom: 1px solid $color-gray-light;
+    }
+
+    thead {
+      td {
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: $color-white-2;
+        text-align: start;
+        padding: 15px;
+      }
+    }
+
+    tbody {
+      tr,
+      td {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__people {
+    @include flexElement(flex-start, center);
+    text-align: start;
+  }
+
+  &__status {
+    p {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 25px;
+      background-color: $bg-color-active;
+      color: $color-active;
+    }
+  }
+
+  &__edit {
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-edit;
     }
   }
 }
