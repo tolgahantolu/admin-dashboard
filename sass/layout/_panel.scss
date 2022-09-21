@@ -192,3 +192,70 @@
     }
   }
 }
+
+// RESPONSIVE DESIGN
+@media (max-width: 770px) {
+  .panel {
+    width: 100%;
+    margin-left: 0;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &__navigation {
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    &__board {
+      max-width: 90%;
+    }
+
+    &__values {
+      justify-content: flex-start;
+    }
+
+    &__value {
+      margin: 10px 20px 10px 0;
+    }
+
+    &__board {
+      width: 92%;
+      padding: 0;
+      overflow-x: auto;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .panel {
+    &__navigation {
+      padding: 15px;
+
+      input {
+        width: 150px;
+      }
+    }
+
+    &__title {
+      padding: 30px 15px 0 15px;
+    }
+
+    &__values {
+      padding: 5px 15px 0 15px;
+    }
+
+    &__value {
+      width: 100%;
+    }
+
+    &__board {
+      width: 86.5%;
+      margin: 30px 15px;
+    }
+  }
+}

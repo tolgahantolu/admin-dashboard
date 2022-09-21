@@ -64,3 +64,36 @@
     }
   }
 }
+
+// RESPONSIVE DESIGN
+@media (max-width: 770px) {
+  .sidebar {
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar.active ~ .panel {
+    width: calc(100% - 270px);
+    margin-left: 270px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar.active ~ .panel .panel__navigation {
+    transition: all 0.3s ease;
+    width: calc(100% - 270px);
+    left: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar.active {
+    width: 100%;
+    z-index: 999;
+  }
+}

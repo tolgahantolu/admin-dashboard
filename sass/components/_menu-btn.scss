@@ -5,3 +5,10 @@
   color: $color-dark;
   display: none;
 }
+
+// RESPONSIVE DESIGN
+@media (max-width: 770px) {
+  #menu-btn {
+    display: initial;
+  }
+}
