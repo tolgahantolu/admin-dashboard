@@ -3,6 +3,10 @@
   height: 100%;
   background-color: $bg-navy-primary;
 
+  position: fixed;
+  left: 0;
+  top: 0;
+
   &__logo {
     color: $color-white;
     padding: 30px 0 0 30px;

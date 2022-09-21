@@ -1,5 +1,7 @@
 .panel {
   width: calc(100% - 300px); // 300px = sidebar width
+  margin-left: 300px;
+  position: relative;
 
   &__navigation {
     padding: 15px 30px;
@@ -7,6 +9,16 @@
     background-color: $color-white;
 
     @include flexElement(space-between, center);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    z-index: 99;
+  }
+
+  &__left {
+    @include flexElement(flex-start, center);
   }
 
   &__search {
@@ -49,6 +61,7 @@
     padding: 30px 30px 0 30px;
     text-transform: capitalize;
     color: $color-gray-dark;
+    margin-top: 70px;
   }
 
   &__values {
@@ -166,7 +179,7 @@
       padding: 4px 10px;
       border-radius: 25px;
       background-color: $bg-color-active;
-      color: $color-active;
+      color: $color-dark;
     }
   }
 
